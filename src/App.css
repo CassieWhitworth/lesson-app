@@ -1,39 +1,103 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fjalla+One&family=Open+Sans:wght@300&family=Quicksand&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:  #f1e9e4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-family: 'Arsenal'
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+h2 {
+    font-family: 'Arsenal';
+    color: black;
+    font-size: 5.7vw;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h3 {
+    font-family: 'Arsenal'
+
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.card-body {
+    font-family: 'Arsenal'
+
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.card-title {
+    font-family: 'Open Sans';
+}
+
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+
+
+.card-img-overlay .card-title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.site-footer {
+    background-image: linear-gradient(#f1e9e4, white);
+    padding: 30px 0;
+    color: black
+}
+
+.navbar-brand {
+    max-width: 4rem;
+    margin-right: 2rem;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    margin-right: 2rem;
+    max-width: 4rem;
+}
+
+.navbar-dark {
+    margin: 0;
+    padding: 30px;
+    background-color: gray;
+    color: black;
+}
+
+.page-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 300ms ease-out;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0;
+    transition: 300ms ease-in;
+}
+
+.jumbotron {
+    background-color: #f1e9e4;
+}
+
+.background {
+    color:#f1e9e4;
 }

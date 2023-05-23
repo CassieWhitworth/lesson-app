@@ -2,7 +2,7 @@ import { Button, Col, Label, FormGroup } from "reactstrap";
 import { Formik, Field, Form } from "formik";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addProspectiveStudent } from "../features/students/ProspectiveStudentsSlice";
+import { postProspectiveStudent } from "../features/students/ProspectiveStudentsSlice";
 import prospectiveStudent from "../features/students/prospectiveStudent";
 
 const ContactForm = () => {
@@ -47,7 +47,7 @@ const ContactForm = () => {
             yearsExperience: values.yearsExperience
         };
         console.log(values);
-        dispatch(addProspectiveStudent(prospectiveStudent));
+        dispatch(postProspectiveStudent(prospectiveStudent));
         resetForm();
 
     }
@@ -209,7 +209,7 @@ const ContactForm = () => {
                         </Field>
                     </Col>
                 </FormGroup>
-                <Button type='submit' color='primary'>
+                <Button type='submit'>
                     Submit
                 </Button>
             </Form>

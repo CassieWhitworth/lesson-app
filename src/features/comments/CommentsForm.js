@@ -2,7 +2,7 @@ import { Formik, Field, Form } from 'formik';
 import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addComment } from './commentsSlice';
+import { postComment } from './commentsSlice';
 
 const CommentForm = () => {
     const [modalOpen, setModalOpen] = useState();
@@ -26,7 +26,7 @@ const CommentForm = () => {
         }
         console.log('form values: ', values);
         console.log('in JSON format: ', JSON.stringify(values));
-        dispatch(addComment(comment));
+        dispatch(postComment(comment));
         resetForm();
         setModalOpen(false);
     };
@@ -34,7 +34,7 @@ const CommentForm = () => {
     return (
         <>
         <Button outline onClick={() => setModalOpen(true)}>
-        <i className='fa fa-pencil fa-lg' /> Add Comment
+        <i className='fa fa-pencil fa-lg' /> Add Review
         </Button>
         <Modal isOpen={modalOpen}>
             <ModalHeader toggle={() => setModalOpen(false)}>
@@ -78,7 +78,7 @@ const CommentForm = () => {
                                     className='form-control'
                                 />
                             </FormGroup>
-                            <Button type='submit' color='primary'>
+                            <Button type='submit'>
                                 Submit
                             </Button>
                         </Form>

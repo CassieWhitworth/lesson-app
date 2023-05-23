@@ -23,27 +23,27 @@ const HomePage = () => {
             <div class="container">
                 <div class="row mt-5">
                     <div class="col d-flex justify-content-center">
-                        <h2><b>CASSIE WHITWORTH</b></h2>
+                        <h1><b>CASSIE WHITWORTH</b></h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col d-flex justify-content-center">
-                        <h2><b>MUSIC STUDIO</b></h2>
+                        <h1><b>MUSIC STUDIO</b></h1>
                     </div>
                 </div>
                 <div class="row mt-3 mb-5">
                     <div class="col d-flex justify-content-center">
-                        <h1 class="text-center">Offering in person or virtual private lessons on Trumpet, Horn, and Beginning Piano to students both young and young at heart in the Charlotte, NC area </h1>
+                        <h2 class="text-center">Offering in person or virtual private lessons on Trumpet, Horn, and Beginning Piano to students both young and young at heart in the Charlotte, NC area </h2>
                     </div>
                 </div>
                 <div class="row mt-3 mb-5">
                     <div class="col d-flex justify-content-center">
-                        <h1 class="text-center">Tailored, one-on-one instruction designed to meet YOU where you are and help you GROW from there</h1>
+                        <h2 class="text-center">Tailored, one-on-one instruction designed to meet YOU where you are and help you GROW from there</h2>
                     </div>
                 </div>
                 <div class="row mt-3 mb-5">
                     <div class="col d-flex justify-content-center">
-                        <h1 class="text-center">All skill levels welcome - complete beginner to advanced player</h1>
+                        <h2 class="text-center">All skill levels welcome - complete beginner to advanced player</h2>
                     </div>
                 </div>
             </div>

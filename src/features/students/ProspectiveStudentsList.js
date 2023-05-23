@@ -1,4 +1,3 @@
-import { PROSPECTIVESTUDENTS } from '../../app/assets/PROSPECTIVESTUDENTS';
 import { Container, Col, Row } from 'reactstrap';
 import ProspectiveStudentCard from './ProspectiveStudentCard';
 import { selectAllProspectiveStudents } from './ProspectiveStudentsSlice';

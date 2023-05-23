@@ -1,18 +1,18 @@
 import { Container, Col, Row } from 'reactstrap';
-import currentStudent from './currentStudent';
 import CurrentStudentCard from './currentStudentCard';
-import { CURRENTSTUDENTS } from '../../app/assets/CURRENTSTUDENTS';
-//import { selectAllProspectiveStudents } from './ProspectiveStudentsSlice';
-//import { useSelector } from 'react-redux';
+import { selectAllCurrentStudents } from './currentStudentSlice';
+import { useSelector } from 'react-redux';
+
 
 const CurrentStudentsList = () => {
+    const currentStudent = useSelector(selectAllCurrentStudents())
     return(
         <Container>
             <Row>
-                {CURRENTSTUDENTS.map((currentStudent) => {
+                {currentStudent && currentStudent.map((currentStudent) => {
                     return (
                         <Col md='6' lg='4' key={currentStudent.id}>
-                           <CurrentStudentCard currentStudent={currentStudent}/>
+                           <CurrentStudentCard props={currentStudent}/>
                         </Col>
                     )
                 })}

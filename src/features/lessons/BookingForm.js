@@ -4,6 +4,8 @@ import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { useDispatch } from 'react-redux';
+import { postCurrentStudent } from '../students/currentStudentSlice';
+import { current } from '@reduxjs/toolkit';
 
 
 const BookingForm = () => {
@@ -26,6 +28,7 @@ const BookingForm = () => {
             virtual: values.virtual,
         };
         console.log(currentStudent);
+        dispatch(postCurrentStudent(currentStudent));
         setModalOpen(false);
     };
 

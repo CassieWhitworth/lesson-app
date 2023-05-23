@@ -20,6 +20,9 @@ h3 {
     font-family: 'Arsenal'
 
 }
+h4 {
+    font-family: 'Arsenal'
+}
 
 .card-body {
     font-family: 'Arsenal'
@@ -50,7 +53,7 @@ h3 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#f1e9e4, white);
+    background-image: linear-gradient(white, '#f1e9e4');
     padding: 30px 0;
     color: black
 }

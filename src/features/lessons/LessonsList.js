@@ -1,6 +1,8 @@
-import { LESSONS } from "../../app/assets/LESSONS";
 import { Container, Col, Row } from 'reactstrap';
 import LessonsCard from "./LessonsCard";
+import { useSelector } from 'react-redux';
+import { selectAllLessons } from './LessonsSlice';
+import { LESSONS } from '../../app/assets/LESSONS';
 
 const LessonsList = () => {
     return(

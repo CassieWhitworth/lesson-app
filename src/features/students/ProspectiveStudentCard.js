@@ -1,4 +1,4 @@
-import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText,  } from 'reactstrap';
 import BookingForm from '../lessons/BookingForm';
 
 const ProspectiveStudentCard = (props) => {
